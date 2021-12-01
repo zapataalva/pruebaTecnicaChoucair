@@ -20,38 +20,41 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>net.serenity-bdd</groupId>
-      <artifactId>serenity-screenplay</artifactId>
-      <version>3.0.5</version>
+      <artifactId>serenity-core</artifactId>
+      <version>2.4.34</version>
     </dependency>
     <dependency>
       <groupId>net.serenity-bdd</groupId>
       <artifactId>serenity-screenplay-webdriver</artifactId>
-      <version>3.0.5</version>
+      <version>2.4.34</version>
+    </dependency>
+    <dependency>
+      <groupId>net.serenity-bdd.maven.plugins</groupId>
+      <artifactId>serenity-maven-plugin</artifactId>
+      <version>2.4.34</version>
     </dependency>
     <dependency>
       <groupId>net.serenity-bdd</groupId>
-      <artifactId>serenity-core</artifactId>
-      <version>3.0.5</version>
-    </dependency>
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-java</artifactId>
-      <version>7.0.0</version>
+      <artifactId>serenity-cucumber6</artifactId>
+      <version>2.4.34</version>
     </dependency>
     <dependency>
       <groupId>net.serenity-bdd</groupId>
-      <artifactId>serenity-cucumber</artifactId>
-      <version>3.0.5</version>
+      <artifactId>serenity-junit</artifactId>
+      <version>2.4.34</version>
     </dependency>
-
-
+    <dependency>
+      <groupId>net.serenity-bdd</groupId>
+      <artifactId>serenity-screenplay</artifactId>
+      <version>2.4.34</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sourceforge.htmlunit</groupId>
+      <artifactId>htmlunit</artifactId>
+      <version>2.47.1</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
