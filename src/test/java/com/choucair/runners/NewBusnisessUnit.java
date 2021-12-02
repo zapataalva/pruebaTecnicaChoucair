@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
         glue = "com/choucair/stepdefinitions",
-        features = "src/test/resources/com.choucair/feature/new_busnisess_unit.feature",
+        features = "src/test/resources/com.choucair/feature/new_business_unit.feature",
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 public class NewBusnisessUnit {

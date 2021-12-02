@@ -10,6 +10,6 @@
     And Se logea con usuario "admin" y password "serenity"
 
     Scenario: Agregar nueva unidad de negocio
-      When Crea una unidad de negocio con el nombre "Nueva unidad" y parent unit "prueba"
-      Then Valida que la unidad exista en la lista
+      When Crea una unidad de negocio con el nombre "CRUD"
+      Then Valida que la unidad "CRUD" exista en la lista
 

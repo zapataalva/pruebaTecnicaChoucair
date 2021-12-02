@@ -1,12 +1,16 @@
 package com.choucair.stepdefinitions;
 
+import com.choucair.questions.ValidateText;
+import com.choucair.taks.CreateNewBusinessUnit;
 import com.choucair.taks.Login;
+import com.choucair.userinterfaces.BusinessUnitPage;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;
+import static org.hamcrest.Matchers.equalTo;
 
 public class NewBusnisessUnitStepdefinitions {
 
@@ -23,12 +27,14 @@ public class NewBusnisessUnitStepdefinitions {
         theActorInTheSpotlight().attemptsTo(Login.with(user,password));
     }
 
-    @When("Crea una unidad de negocio con el nombre {string} y parent unit {string}")
-    public void creaUnaUnidadDeNegocioConElNombreYParentUnit(String string, String string2) {
+    @When("Crea una unidad de negocio con el nombre {string}")
+    public void creaUnaUnidadDeNegocioConElNombreYParentUnit(String name) {
+        theActorInTheSpotlight().attemptsTo(CreateNewBusinessUnit.with(name));
     }
 
-    @Then("Valida que la unidad exista en la lista")
-    public void validaQueLaUnidadExistaEnLaLista() {
+    @Then("Valida que la unidad {string} exista en la lista")
+    public void validaQueLaUnidadExistaEnLaLista(String text) {
+        theActorInTheSpotlight().should(seeThat(ValidateText.with(BusinessUnitPage.NAME_BUSINESS,text), equalTo(text)));
     }
 
 }
