@@ -1,5 +1,4 @@
 #Autor: Santiago Zapata Álvarez
-  @Chrome
   Feature: Agregar nueva unidad de negocio
     Yo como automatizador
     Necesito agregar una nueva unidad de negocio

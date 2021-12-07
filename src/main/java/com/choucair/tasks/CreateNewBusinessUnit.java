@@ -1,4 +1,4 @@
-package com.choucair.taks;
+package com.choucair.tasks;
 
 import com.choucair.userinterfaces.BusinessUnitPage;
 import net.serenitybdd.screenplay.Actor;

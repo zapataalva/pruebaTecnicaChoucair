@@ -1,8 +1,8 @@
 package com.choucair.stepdefinitions;
 
 import com.choucair.questions.ValidateText;
-import com.choucair.taks.CreateNewBusinessUnit;
-import com.choucair.taks.Login;
+import com.choucair.tasks.CreateNewBusinessUnit;
+import com.choucair.tasks.Login;
 import com.choucair.userinterfaces.BusinessUnitPage;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
